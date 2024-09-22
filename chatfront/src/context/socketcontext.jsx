@@ -21,6 +21,9 @@ export const SocketProvider = ({ children }) => {
         query: {
           userId: userinfo._id,
         },
+        extraHeaders: {
+          "Access-Control-Allow-Origin": "https://chat-app-frontend-blue.vercel.app"
+      }
       });
 
       socket.current.on("connect", () => {
