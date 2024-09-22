@@ -16,11 +16,13 @@ const app = express();
 // Middleware
 
 app.use(express.json());
-app.use(cors({
-  origin: [process.env.ORIGIN],
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
-    credentials: true
-}));
+const corsOptions = {
+  origin: 'https://chat-app-frontend-nine-tawny.vercel.app',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify allowed methods if necessary
+  credentials: true, // Allow cookies or authentication headers
+};
+
+app.use(cors(corsOptions));
 app.use(cookieParser());
 
 
