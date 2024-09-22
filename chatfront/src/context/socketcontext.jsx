@@ -22,7 +22,7 @@ export const SocketProvider = ({ children }) => {
           userId: userinfo._id,
         },
         extraHeaders: {
-          "Access-Control-Allow-Origin": "https://chat-app-backend-swart-ten.vercel.app"
+          "Access-Control-Allow-Origin": "https://chat-app-backend-swart-ten.vercel.app/"
       }
       });
 
