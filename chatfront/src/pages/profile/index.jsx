@@ -16,7 +16,7 @@ const Profile = () => {
   const { userinfo, setuserinfo } = useAppStore();
   const [firstname, setfirstname] = useState(userinfo.firstname || "");
   const [lastname, setlastname] = useState(userinfo.lastname || "");
-  const [image, setimage] = useState(null);
+  const [image, setimage] = useState(userinfo.image|| null);
   const [hovered, sethovered] = useState(false);
   const [selectedcol, setselectedcol] = useState(userinfo.color || 0);
   const fileInputRef = useRef(null);
