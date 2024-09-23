@@ -1,4 +1,4 @@
-export const HOST='https://chat-app-backend-swart-ten.vercel.app';
+export const HOST="http://localhost:8747";
 export const AUTH_ROUTES='api/auth';
 export const CONTACT_ROUTES='api/contacts';
 export const SIGNUP_ROUTES=`${AUTH_ROUTES}/signup`;
