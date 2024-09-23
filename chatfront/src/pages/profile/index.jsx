@@ -108,6 +108,7 @@ const Profile = () => {
   };
 
   return (
+    console.log(userinfo),
     <div className="bg-[#1b1c24] h-screen flex items-center justify-center flex-col gap-10 px-6">
       <h1 className="text-4xl font-semibold text-white">Profile Page</h1>
       <div className="flex flex-col gap-10 w-full md:w-[500px]">
