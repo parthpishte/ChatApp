@@ -16,7 +16,7 @@ export const SocketProvider = ({ children }) => {
 
   useEffect(() => {
     if (userinfo) {
-      socket.current = io('https://chat-app-backend-swart-ten.vercel.app', {
+      socket.current = io('http://localhost:8747', {
         withCredentials: true,
         query: {
           userId: userinfo._id,
